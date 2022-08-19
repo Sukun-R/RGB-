@@ -1,21 +1,3 @@
-window.onload = function now() {
-    let now_d = new Date();
-
-    let now_year = now_d.getFullYear();
-    let now_month = ("00" + (now_d.getMonth() + 1)).slice(-2);
-    let now_day_k = ("00" + now_d.getDate()).slice(-2);
-    let now_hours = ("00" + now_d.getHours()).slice(-2);
-    let now_minutes = ("00" + now_d.getMinutes()).slice(-2);
-    let now_seconds = ("00" + now_d.getSeconds()).slice(-2);
-    let now_youbi_k = now_d.getDay() - 1;
-    const now_youbi_list = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
-    let now_youbi = now_youbi_list[now_youbi_k]
-    let now_day = now_year + " : " + now_month + "," + now_day_k + "," + now_hours + ":" + now_minutes + ":" + now_seconds;
-    document.getElementById('clock').innerHTML = now_day;
-    document.getElementById('day').innerHTML = now_youbi;
-}
-
-
 function jikan() {
     let d = new Date();
 
@@ -32,6 +14,7 @@ function jikan() {
     document.getElementById('clock').innerHTML = day;
     document.getElementById('day').innerHTML = youbi;
 }
+window.onload = jikan();
 setInterval(jikan, 1000);
 
 function copy() {
