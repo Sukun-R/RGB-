@@ -1,1 +1,2 @@
-# RGB-
+# 時計です
+# This is clock.
