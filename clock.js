@@ -20,12 +20,13 @@ setInterval(jikan, 1000);
 function copy() {
 
     let clock = document.getElementsByClassName('clock')[0];
+    let day = document.getElementById('day');
     let coppybutton = document.getElementById('copybutton');
     clock.className = "copy_clock_data";
     clock.selected = true;
     coppybutton.id = "align_center_button";
     if (navigator.clipboard) {
-        navigator.clipboard.writeText(clock.textContent);
+        navigator.clipboard.writeText(clock.textContent.slice(0, 13) + " " + day.textContent + ", " + clock.textContent.slice(13));
     }
     coppybutton.innerHTML = "copy ✓";
     let crock = document.getElementsByClassName('copy_clock_data')[0];
