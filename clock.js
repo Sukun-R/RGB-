@@ -7,8 +7,8 @@ function jikan() {
     let hours = ("00" + d.getHours()).slice(-2);
     let minutes = ("00" + d.getMinutes()).slice(-2);
     let seconds = ("00" + d.getSeconds()).slice(-2);
-    let youbi_k = d.getDay() - 1;
-    const youbi_list = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    let youbi_k = d.getDay()
+    const youbi_list = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
     let youbi = youbi_list[youbi_k]
     let day = year + " : " + month + "," + day_k + "," + hours + ":" + minutes + ":" + seconds;
     document.getElementById('clock').innerHTML = day;
