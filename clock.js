@@ -45,7 +45,7 @@ window.onload = function() {
         }
         if (event.shiftKey == true) {
             if (event.ctrlKey == true) {
-                if (event.keyCode == 74){
+                if (event.keyCode == 74 || event.keyCode == 73){
                     event.preventDefault();
                     }
                 }
