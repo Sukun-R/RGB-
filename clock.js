@@ -31,23 +31,19 @@ function copy() {
     coppybutton.innerHTML = "copy ✓";
     let crock = document.getElementsByClassName('copy_clock_data')[0];
     crock.className = "clock";
-    setTimeout(function() {
+    setTimeout(() => {
         coppybutton.innerHTML = "copy";
         document.getElementById('align_center_button').id = "copybutton";
     }, 1500);
 
 }
-window.onload = function() {
-    document.oncontextmenu = function () {return false;}
-    document.addEventListener('keydown', function() {
-        if (event.keyCode == 123) { 
-            event.preventDefault(); 
-        }
+window.onload = () => {
+    document.oncontextmenu = () => {return false;}
+    document.addEventListener('keydown', () => {
+        (event.keyCode == 123) ? event.preventDefault(); 
         if (event.shiftKey == true) {
             if (event.ctrlKey == true) {
-                if (event.keyCode == 74 || event.keyCode == 73){
-                    event.preventDefault();
-                    }
+                (event.keyCode == 74 || event.keyCode == 73) ? event.preventDefault();
                 }
             }
     });
