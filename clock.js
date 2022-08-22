@@ -43,7 +43,7 @@ window.onload = function() {
         if (event.keyCode == 123) { 
             event.preventDefault(); 
         }
-        if (e.shiftKey == true) {
+        if (event.shiftKey == true) {
             console.log('shiftKeyキーが押されてます');
             }
     });
