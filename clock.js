@@ -37,3 +37,8 @@ function copy() {
     }, 1500);
 
 }
+window.onload = function() {
+    document.addEventListener('keydown', function() {
+        if (event.keyCode == 123) { event.preventDefault(); }
+    });
+}
