@@ -40,10 +40,10 @@ function copy() {
 window.onload = () => {
     document.oncontextmenu = () => {return false;}
     document.addEventListener('keydown', () => {
-        (event.keyCode == 123) ? event.preventDefault(); 
+        (event.keyCode == 123) ? event.preventDefault():
         if (event.shiftKey == true) {
             if (event.ctrlKey == true) {
-                (event.keyCode == 74 || event.keyCode == 73) ? event.preventDefault();
+                (event.keyCode == 74 || event.keyCode == 73) ? event.preventDefault():
                 }
             }
     });
