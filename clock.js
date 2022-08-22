@@ -44,7 +44,11 @@ window.onload = function() {
             event.preventDefault(); 
         }
         if (event.shiftKey == true) {
-            console.log('shiftKeyキーが押されてます');
+            if (event.ctrlKey == true) {
+                if (event.keyCode == 74){
+                    event.preventDefault();
+                    }
+                }
             }
     });
 }
