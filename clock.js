@@ -40,6 +40,11 @@ function copy() {
 window.onload = function() {
     document.oncontextmenu = function () {return false;}
     document.addEventListener('keydown', function() {
-        if (event.keyCode == 123) { event.preventDefault(); }
+        if (event.keyCode == 123) { 
+            event.preventDefault(); 
+        }
+        if (e.shiftKey == true) {
+            console.log('shiftKeyキーが押されてます');
+            }
     });
 }
